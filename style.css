@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(68, 61, 85);
+    color: rgb(224, 224, 224);
+    position: relative;
+}
+
+.gameHeader {
+    text-align: center;
+    line-height: 35px;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+.pickSymbol {
+    width: 60%;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pickHeader {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.symbol {
+    font-size: 2.7rem;
+    flex-basis: 50%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.board {
+    width: 95%;
+    height: 50%;
+    display: grid;
+    grid: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 3px 3px;
+    background-color: rgb(71, 51, 35);
+    border: 3px solid rgb(71, 51, 35);
+}
+
+.fields {
+    background-color: rgb(97, 139, 80);
+    cursor: pointer;
+    transition: background-color .2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.animation-text-shadow {
+    animation: text-shadow 4s linear infinite;
+}
+
+@keyframes text-shadow {
+    from {
+        text-shadow: 2px 2px rgb(216, 130, 130);
+    }
+    20% {
+        text-shadow: 8px 6px rgb(197, 105, 105);
+    }
+    40% {
+        text-shadow: 2px 6px rgb(212, 48, 48);
+    }
+    60% {
+        text-shadow: -4px -2px rgb(238, 13, 13);
+    }
+    80% {
+        text-shadow: -4px -6px rgb(160, 59, 59);
+    }
+    to {
+        text-shadow: 3px 1px rgb(221, 107, 107);
+    }
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 30px 50px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.messageWrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.messageExit {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(235, 61, 61);
+}
+
+.blur {
+    filter: blur(10px);
+}

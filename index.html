@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Kółko i krzyżyk</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="gameHeader">Zagraj w kółko i krzyżyk!</h1>
+        
+        <div class="pickSymbol">
+            <h2 class="pickHeader">Wybierz:</h2>
+            <div class="symbol symbol-x">x</div>
+            <div class="symbol symbol-o">o</div>
+        </div>
+
+        <div class="board">
+            <div class="fields" id="0"></div>
+            <div class="fields" id="1"></div>
+            <div class="fields" id="2"></div>
+            <div class="fields" id="3"></div>
+            <div class="fields" id="4"></div>
+            <div class="fields" id="5"></div>
+            <div class="fields" id="6"></div>
+            <div class="fields" id="7"></div>
+            <div class="fields" id="8"></div>
+        </div>
+    </div>
+    <script src="_message.js"></script>
+    <script src="_pickSymbol"></script>
+    <script src="_board.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
