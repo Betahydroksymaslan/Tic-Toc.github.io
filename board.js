@@ -52,6 +52,7 @@ class Game {
         if (e.target.classList.contains('messageExit')) {
             e.target.parentNode.remove();
             this.container.classList.remove('blur');
+            document.querySelector('.messageWrapper').remove();
         } else return;
     }
 
